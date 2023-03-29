@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ definition of class Square"""
 
+
 class Square:
     """Represents a square
     Attributes:
