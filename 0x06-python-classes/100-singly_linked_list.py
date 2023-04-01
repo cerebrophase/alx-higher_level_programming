@@ -40,7 +40,6 @@ class Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
-
         class SinglyLinkedList:
             """ defines a singly linked list """
 
@@ -64,8 +63,9 @@ class Node:
                     self.head = new_node
 
                 else:
-                    curret_node = self.head
-                    while current_node.next_node is not None and value > current_node.next_node.data:
+                    current_node = self.head
+                    while current_node.next_node is not None
+                    and value > current_node.next_node.data:
                         current_node = current_node.next_node
                     new_node.next_node = current_node.next_node
                     current_node.next_node = new_node
@@ -79,5 +79,3 @@ class Node:
                     node_list.append(str(current_node.data))
                     current_node = current_node.next_node
                 return '\n'.join(node_list)
-
-
