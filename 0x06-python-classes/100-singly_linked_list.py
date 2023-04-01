@@ -64,8 +64,7 @@ class Node:
 
                 else:
                     current_node = self.head
-                    while current_node.next_node is not None
-                    and value > current_node.next_node.data:
+                    while current_node.next_node is not None and value > current_node.next_node.data:
                         current_node = current_node.next_node
                     new_node.next_node = current_node.next_node
                     current_node.next_node = new_node
